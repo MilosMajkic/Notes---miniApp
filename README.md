@@ -226,8 +226,3 @@ CORS is enabled for all origins, allowing frontend applications to access the AP
 
 ISC
 
-## Author
-
-Notes API Project
-
-
