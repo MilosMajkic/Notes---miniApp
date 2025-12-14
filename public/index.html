@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beleške - Aplikacija</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📝 Moje Beleške</h1>
+            <p class="subtitle">Upravljaj svojim beleškama jednostavno i brzo</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Forma za kreiranje/ažuriranje -->
+            <div class="form-container">
+                <h2 id="form-title">Nova Beleška</h2>
+                <form id="note-form">
+                    <input 
+                        type="text" 
+                        id="note-title" 
+                        placeholder="Naslov beleške..." 
+                        required
+                    >
+                    <textarea 
+                        id="note-content" 
+                        placeholder="Sadržaj beleške..." 
+                        rows="6"
+                        required
+                    ></textarea>
+                    <div class="form-buttons">
+                        <button type="submit" id="submit-btn" class="btn btn-primary">
+                            Sačuvaj
+                        </button>
+                        <button type="button" id="cancel-btn" class="btn btn-secondary" style="display: none;">
+                            Otkaži
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Lista beleški -->
+            <div class="notes-container">
+                <div class="notes-header">
+                    <h2>Sve Beleške</h2>
+                    <span id="notes-count" class="badge">0</span>
+                </div>
+                <div id="notes-list" class="notes-list">
+                    <div class="empty-state">
+                        <p>Nema beleški. Kreiraj prvu!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+</html>
+
+
